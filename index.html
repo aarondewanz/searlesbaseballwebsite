@@ -3,12 +3,23 @@
 <head>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
+        <div class="submenu">
+            <a href="#" onclick="toggleTeamsList()">Teams</a>
+            <ul class="team-list">
+                <li><a href="team-pages/bullheads.html" class="link-decorations">Bullheads</a></li>
+                <li><a href="team-pages/grizzlies.html" class="link-decorations">Grizzlies</a></li>
+                <li><a href="#">Juniors</a></li>
+                <li><a href="#">Rookies</a></li>
+                <li><a href="#">Peanuts</a></li>
+                <li><a href="#">Rookies Softball</a></li>
+            </ul>
+        </div>
+        <a href="subpages/upcoming_events.html" class="link-decorations">Events</a>
+        <a href="subpages/volunteering.html" class="link-decorations">Volunteering</a>
         <a href="#">Contact</a>
+        <a href="#">About</a>
       </div>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#00008B;</span>
+      <span style="font-size:30px;cursor:pointer;color:rgba(0, 0, 139, 0.8);" onclick="openNav()">&#9776;</span>
   <meta charset="utf-8">
   <title>Searles Baseball</title>
   <style>
@@ -49,7 +60,7 @@
       text-decoration: none;
       font-size: 25px;
       color: #818181;
-      display: block;
+      display: block;   
       transition: 0.3s;
     }
     .sidenav a:hover {
@@ -62,6 +73,13 @@
       font-size: 36px;
       margin-left: 50px;
     }
+    .link-decorations {
+      color: white; /* Change the color to red */
+      text-decoration: none; /* Remove the underline */
+    }
+    .team-list {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -69,7 +87,7 @@
     <div class="content">
       <h1>Welcome to Searles Baseball</h1>
       <p>Explore the latest news, events, and updates from our team.</p>
-      <a href="subpage.html">Go to Subpage</a>
+      <a href="subpages/upcoming_events.html" class="link-decorations">Upcoming Events</a>
     </div>
   </div>
   <div class="content">
@@ -77,10 +95,23 @@
   </div>
     <script>
         function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "250px";
+            maketeamslistclosedonnavopen();
         }
         function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        function toggleTeamsList() {
+            var list = document.querySelector('.team-list');
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        }
+        function maketeamslistclosedonnavopen() {
+            var list = document.querySelector('.team-list');
+            list.style.display = "none";
         }
     </script>
 </body>
