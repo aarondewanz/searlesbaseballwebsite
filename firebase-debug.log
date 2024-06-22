@@ -1,203 +1,142 @@
-[debug] [2024-06-10T00:34:04.295Z] ----------------------------------------------------------------------
-[debug] [2024-06-10T00:34:04.296Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2024-06-10T00:34:04.297Z] CLI Version:   13.11.2
-[debug] [2024-06-10T00:34:04.297Z] Platform:      win32
-[debug] [2024-06-10T00:34:04.297Z] Node Version:  v18.14.2
-[debug] [2024-06-10T00:34:04.297Z] Time:          Sun Jun 09 2024 17:34:04 GMT-0700 (Pacific Daylight Time)
-[debug] [2024-06-10T00:34:04.298Z] ----------------------------------------------------------------------
+[debug] [2024-06-10T01:09:53.511Z] ----------------------------------------------------------------------
+[debug] [2024-06-10T01:09:53.513Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-06-10T01:09:53.513Z] CLI Version:   13.11.2
+[debug] [2024-06-10T01:09:53.513Z] Platform:      win32
+[debug] [2024-06-10T01:09:53.513Z] Node Version:  v18.14.2
+[debug] [2024-06-10T01:09:53.514Z] Time:          Sun Jun 09 2024 18:09:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2024-06-10T01:09:53.514Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-06-10T00:34:04.305Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-06-10T00:34:04.305Z] > authorizing via signed-in user (searlesbaseball22@gmail.com)
+[debug] [2024-06-10T01:09:53.602Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-10T01:09:53.603Z] > authorizing via signed-in user (searlesbaseball22@gmail.com)
+[debug] [2024-06-10T01:09:53.603Z] [iam] checking project searles-website for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2024-06-10T01:09:53.605Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions [none]
+[debug] [2024-06-10T01:09:53.606Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:09:53.606Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2024-06-10T01:09:53.820Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions 200
+[debug] [2024-06-10T01:09:53.821Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2024-06-10T01:09:53.821Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/searles-website@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-10T01:09:53.821Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/searles-website@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-10T01:09:54.042Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/searles-website@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-10T01:09:54.042Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/searles-website@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-10T01:09:54.044Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/searles-website [none]
+[debug] [2024-06-10T01:09:54.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/searles-website 200
+[debug] [2024-06-10T01:09:54.257Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/searles-website {"projectId":"searles-website","projectNumber":"674543703314","displayName":"Searles Website","name":"projects/searles-website","resources":{"hostingSite":"searles-website","realtimeDatabaseInstance":"searles-website-default-rtdb","storageBucket":"searles-website.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bee50a55-de21-44d6-a45e-c1827b3110b4"}
+[debug] [2024-06-10T01:09:54.258Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/searles-website [none]
+[debug] [2024-06-10T01:09:54.460Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/searles-website 200
+[debug] [2024-06-10T01:09:54.461Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/searles-website {"projectId":"searles-website","projectNumber":"674543703314","displayName":"Searles Website","name":"projects/searles-website","resources":{"hostingSite":"searles-website","realtimeDatabaseInstance":"searles-website-default-rtdb","storageBucket":"searles-website.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bee50a55-de21-44d6-a45e-c1827b3110b4"}
 [info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  C:\Users\aaron\Baseball Website\searlesbaseballwebsite
-
+[info] === Deploying to 'searles-website'...
 [info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2024-06-10T00:35:39.596Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2024-06-10T00:35:40.043Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
-[debug] [2024-06-10T00:35:40.043Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[info] i  Using project searles-website (Searles Website) 
-[info] 
-=== Database Setup
-[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
-[debug] [2024-06-10T00:35:43.870Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/firebasedatabase.googleapis.com [none]
-[debug] [2024-06-10T00:35:43.870Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/searles-website
-[debug] [2024-06-10T00:35:44.464Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/firebasedatabase.googleapis.com 200
-[debug] [2024-06-10T00:35:44.464Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/firebasedatabase.googleapis.com [omitted]
-[info] +  database: required API firebasedatabase.googleapis.com is enabled 
-[info] 
-[debug] [2024-06-10T00:35:44.466Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/searles-website/locations/-/instances/searles-website-default-rtdb [none]
-[debug] [2024-06-10T00:35:45.004Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/searles-website/locations/-/instances/searles-website-default-rtdb 200
-[debug] [2024-06-10T00:35:45.005Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/searles-website/locations/-/instances/searles-website-default-rtdb {"name":"projects/674543703314/locations/us-central1/instances/searles-website-default-rtdb","project":"projects/674543703314","databaseUrl":"https://searles-website-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
-[info] 
-[info] Firebase Realtime Database Security Rules allow you to define how your data should be
-[info] structured and when your data can be read from and written to.
-[info] 
-[debug] [2024-06-10T00:36:11.027Z] >>> [apiv2][query] GET https://searles-website-default-rtdb.firebaseio.com/.settings/rules.json [none]
-[debug] [2024-06-10T00:36:11.379Z] <<< [apiv2][status] GET https://searles-website-default-rtdb.firebaseio.com/.settings/rules.json 200
-[debug] [2024-06-10T00:36:11.380Z] <<< [apiv2][body] GET https://searles-website-default-rtdb.firebaseio.com/.settings/rules.json [stream]
-[info] +  Database Rules for searles-website-default-rtdb have been written to database.rules.json. 
-[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
-[info] firebase deploy.
-[info] 
-=== Firestore Setup
-[debug] [2024-06-10T00:36:11.385Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/firestore.googleapis.com [none]
-[debug] [2024-06-10T00:36:11.386Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/firestore.googleapis.com x-goog-quota-user=projects/searles-website
-[debug] [2024-06-10T00:36:11.942Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/firestore.googleapis.com 200
-[debug] [2024-06-10T00:36:11.942Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/firestore.googleapis.com [omitted]
-[debug] [2024-06-10T00:36:11.943Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default) [none]
-[debug] [2024-06-10T00:36:12.507Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default) 200
-[debug] [2024-06-10T00:36:12.507Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default) {"name":"projects/searles-website/databases/(default)","uid":"ec4b3b71-de13-4cac-b49a-bf62895c551e","createTime":"2024-05-15T02:55:33.676923Z","updateTime":"2024-05-15T02:55:33.676923Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-06-09T23:36:12.232526Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IKTBuLDlz4YDMLSYnJrtpoYD"}
-[debug] [2024-06-10T00:36:12.507Z] database_type: FIRESTORE_NATIVE
-[debug] [2024-06-10T00:36:12.507Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-06-10T00:36:12.508Z] > authorizing via signed-in user (searlesbaseball22@gmail.com)
-[debug] [2024-06-10T00:36:12.508Z] [iam] checking project searles-website for permissions ["firebase.projects.get"]
-[debug] [2024-06-10T00:36:12.509Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions [none]
-[debug] [2024-06-10T00:36:12.509Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions x-goog-quota-user=projects/searles-website
-[debug] [2024-06-10T00:36:12.509Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions {"permissions":["firebase.projects.get"]}
-[debug] [2024-06-10T00:36:12.754Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions 200
-[debug] [2024-06-10T00:36:12.754Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions {"permissions":["firebase.projects.get"]}
-[info] 
-[info] Firestore Security Rules allow you to define how and when to allow
-[info] requests. You can keep these rules in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[debug] [2024-06-10T00:36:15.932Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/searles-website/releases pageSize=10&pageToken=
-[debug] [2024-06-10T00:36:16.267Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/searles-website/releases 200
-[debug] [2024-06-10T00:36:16.267Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/searles-website/releases {"releases":[{"name":"projects/searles-website/releases/cloud.firestore","rulesetName":"projects/searles-website/rulesets/58dbd027-3a77-46c6-9fae-c5e8730e9ce6","createTime":"2024-05-15T02:55:35.615660Z","updateTime":"2024-05-15T02:55:35.615660Z"}]}
-[debug] [2024-06-10T00:36:16.267Z] Found ruleset: projects/searles-website/rulesets/58dbd027-3a77-46c6-9fae-c5e8730e9ce6
-[debug] [2024-06-10T00:36:16.267Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/searles-website/rulesets/58dbd027-3a77-46c6-9fae-c5e8730e9ce6 [none]
-[debug] [2024-06-10T00:36:16.466Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/searles-website/rulesets/58dbd027-3a77-46c6-9fae-c5e8730e9ce6 200
-[debug] [2024-06-10T00:36:16.467Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/searles-website/rulesets/58dbd027-3a77-46c6-9fae-c5e8730e9ce6 [omitted]
-[info] 
-[info] Firestore indexes allow you to perform complex queries while
-[info] maintaining performance that scales with the size of the result
-[info] set. You can keep index definitions in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[debug] [2024-06-10T00:36:34.974Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default)/collectionGroups/-/indexes [none]
-[debug] [2024-06-10T00:36:34.976Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
-[debug] [2024-06-10T00:36:35.478Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default)/collectionGroups/-/indexes 200
-[debug] [2024-06-10T00:36:35.479Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default)/collectionGroups/-/indexes {}
-[debug] [2024-06-10T00:36:35.899Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
-[debug] [2024-06-10T00:36:35.900Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/searles-website/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/searles-website/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
-[info] 
-=== Functions Setup
-[debug] [2024-06-10T00:36:35.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-06-10T00:36:35.903Z] > authorizing via signed-in user (searlesbaseball22@gmail.com)
-[debug] [2024-06-10T00:36:35.903Z] [iam] checking project searles-website for permissions ["firebase.projects.get"]
-[debug] [2024-06-10T00:36:35.904Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions [none]
-[debug] [2024-06-10T00:36:35.904Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions x-goog-quota-user=projects/searles-website
-[debug] [2024-06-10T00:36:35.904Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions {"permissions":["firebase.projects.get"]}
-[debug] [2024-06-10T00:36:36.173Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions 200
-[debug] [2024-06-10T00:36:36.173Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:testIamPermissions {"permissions":["firebase.projects.get"]}
-[debug] [2024-06-10T00:36:36.174Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com [none]
-[debug] [2024-06-10T00:36:36.174Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/searles-website
-[debug] [2024-06-10T00:36:36.176Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/runtimeconfig.googleapis.com [none]
-[debug] [2024-06-10T00:36:36.176Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/searles-website
-[debug] [2024-06-10T00:36:36.479Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com 200
-[debug] [2024-06-10T00:36:36.479Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com [omitted]
-[debug] [2024-06-10T00:36:36.479Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com:enable [none]
-[debug] [2024-06-10T00:36:36.480Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/searles-website
-[debug] [2024-06-10T00:36:36.737Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/runtimeconfig.googleapis.com 200
-[debug] [2024-06-10T00:36:36.737Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/runtimeconfig.googleapis.com [omitted]
-[debug] [2024-06-10T00:36:37.306Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com:enable 200
-[debug] [2024-06-10T00:36:37.306Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com:enable [omitted]
-[debug] [2024-06-10T00:36:47.324Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com [none]
-[debug] [2024-06-10T00:36:47.324Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/searles-website
-[debug] [2024-06-10T00:36:47.978Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com 200
-[debug] [2024-06-10T00:36:47.978Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com [omitted]
-[info] Let's create a new codebase for your functions.
-[info] A directory corresponding to the codebase will be created in your project
-[info] with sample code pre-configured.
-
-[info] See https://firebase.google.com/docs/functions/organize-functions for
-[info] more information on organizing your functions using codebases.
-
-[info] Functions can be deployed with firebase deploy.
-
-[info] +  Wrote functions/package.json 
-[info] +  Wrote functions/.eslintrc.js 
-[info] +  Wrote functions/index.js 
-[info] +  Wrote functions/.gitignore 
-[info] 
-=== Hosting Setup
-[debug] [2024-06-10T00:37:50.065Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/searles-website [none]
-[debug] [2024-06-10T00:37:50.338Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/searles-website 200
-[debug] [2024-06-10T00:37:50.339Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/searles-website {"projectId":"searles-website","projectNumber":"674543703314","displayName":"Searles Website","name":"projects/searles-website","resources":{"hostingSite":"searles-website","realtimeDatabaseInstance":"searles-website-default-rtdb"},"state":"ACTIVE","etag":"1_1b5204b5-4f43-4475-ac1c-fa2c7f3b6f2c"}
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[info] +  Wrote public/404.html 
-[debug] [2024-06-10T00:40:04.348Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
-[debug] [2024-06-10T00:40:04.471Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
-[debug] [2024-06-10T00:40:04.472Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.2","browserURL":"https://www.gstatic.com/firebasejs/10.12.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.2/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.2/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.memory.js"}}
-[info] +  Wrote public/index.html 
-[info] 
-[info] i  Detected a .git folder at C:\Users\aaron\Baseball Website\searlesbaseballwebsite 
-[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
-[info] 
-[info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=399604494&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
-[info] 
-[info] Waiting for authentication...
-[debug] [2024-06-10T00:41:28.157Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
-[debug] [2024-06-10T00:41:28.157Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
-[debug] [2024-06-10T00:41:28.458Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
-[debug] [2024-06-10T00:41:28.459Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
-[debug] [2024-06-10T00:41:28.472Z] >>> [apiv2][query] GET https://api.github.com/user [none]
-[debug] [2024-06-10T00:41:28.755Z] <<< [apiv2][status] GET https://api.github.com/user 200
-[debug] [2024-06-10T00:41:28.755Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"aarondewanz","id":146387302,"node_id":"U_kgDOCLmxZg","avatar_url":"https://avatars.githubusercontent.com/u/146387302?v=4","gravatar_id":"","url":"https://api.github.com/users/aarondewanz","html_url":"https://github.com/aarondewanz","followers_url":"https://api.github.com/users/aarondewanz/followers","following_url":"https://api.github.com/users/aarondewanz/following{/other_user}","gists_url":"https://api.github.com/users/aarondewanz/gists{/gist_id}","starred_url":"https://api.github.com/users/aarondewanz/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/aarondewanz/subscriptions","organizations_url":"https://api.github.com/users/aarondewanz/orgs","repos_url":"https://api.github.com/users/aarondewanz/repos","events_url":"https://api.github.com/users/aarondewanz/events{/privacy}","received_events_url":"https://api.github.com/users/aarondewanz/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":1,"following":0,"created_at":"2023-09-28T20:23:57Z","updated_at":"2024-06-10T00:41:10Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":16201,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
-[info] 
-[info] +  Success! Logged into GitHub as aarondewanz 
-[info] 
-[debug] [2024-06-10T00:42:43.711Z] >>> [apiv2][query] GET https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/actions/secrets/public-key type=owner
-[debug] [2024-06-10T00:42:44.036Z] <<< [apiv2][status] GET https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/actions/secrets/public-key 200
-[debug] [2024-06-10T00:42:44.036Z] <<< [apiv2][body] GET https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/actions/secrets/public-key {"key_id":"3380204578043523366","key":"p2pVEKth9CbpbvhRmlKbJ6hqcRd0oYmwXaxBlkBVcFw="}
-[debug] [2024-06-10T00:42:44.038Z] >>> [apiv2][query] GET https://api.github.com/repos/aarondewanz/searlesbaseballwebsite [none]
-[debug] [2024-06-10T00:42:44.293Z] <<< [apiv2][status] GET https://api.github.com/repos/aarondewanz/searlesbaseballwebsite 200
-[debug] [2024-06-10T00:42:44.293Z] <<< [apiv2][body] GET https://api.github.com/repos/aarondewanz/searlesbaseballwebsite {"id":798042192,"node_id":"R_kgDOL5EoUA","name":"searlesbaseballwebsite","full_name":"aarondewanz/searlesbaseballwebsite","private":false,"owner":{"login":"aarondewanz","id":146387302,"node_id":"U_kgDOCLmxZg","avatar_url":"https://avatars.githubusercontent.com/u/146387302?v=4","gravatar_id":"","url":"https://api.github.com/users/aarondewanz","html_url":"https://github.com/aarondewanz","followers_url":"https://api.github.com/users/aarondewanz/followers","following_url":"https://api.github.com/users/aarondewanz/following{/other_user}","gists_url":"https://api.github.com/users/aarondewanz/gists{/gist_id}","starred_url":"https://api.github.com/users/aarondewanz/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/aarondewanz/subscriptions","organizations_url":"https://api.github.com/users/aarondewanz/orgs","repos_url":"https://api.github.com/users/aarondewanz/repos","events_url":"https://api.github.com/users/aarondewanz/events{/privacy}","received_events_url":"https://api.github.com/users/aarondewanz/received_events","type":"User","site_admin":false},"html_url":"https://github.com/aarondewanz/searlesbaseballwebsite","description":null,"fork":false,"url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite","forks_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/forks","keys_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/keys{/key_id}","collaborators_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/teams","hooks_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/hooks","issue_events_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/issues/events{/number}","events_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/events","assignees_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/assignees{/user}","branches_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/branches{/branch}","tags_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/tags","blobs_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/git/refs{/sha}","trees_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/git/trees{/sha}","statuses_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/statuses/{sha}","languages_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/languages","stargazers_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/stargazers","contributors_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/contributors","subscribers_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/subscribers","subscription_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/subscription","commits_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/commits{/sha}","git_commits_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/git/commits{/sha}","comments_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/comments{/number}","issue_comment_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/issues/comments{/number}","contents_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/contents/{+path}","compare_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/compare/{base}...{head}","merges_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/merges","archive_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/downloads","issues_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/issues{/number}","pulls_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/pulls{/number}","milestones_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/milestones{/number}","notifications_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/labels{/name}","releases_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/releases{/id}","deployments_url":"https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/deployments","created_at":"2024-05-09T01:25:15Z","updated_at":"2024-05-15T03:50:34Z","pushed_at":"2024-05-15T03:50:31Z","git_url":"git://github.com/aarondewanz/searlesbaseballwebsite.git","ssh_url":"git@github.com:aarondewanz/searlesbaseballwebsite.git","clone_url":"https://github.com/aarondewanz/searlesbaseballwebsite.git","svn_url":"https://github.com/aarondewanz/searlesbaseballwebsite","homepage":null,"size":16199,"stargazers_count":0,"watchers_count":0,"language":"HTML","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"dev","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","security_and_analysis":{"secret_scanning":{"status":"enabled"},"secret_scanning_push_protection":{"status":"enabled"},"dependabot_security_updates":{"status":"disabled"},"secret_scanning_validity_checks":{"status":"disabled"}},"network_count":0,"subscribers_count":1}
-[debug] [2024-06-10T00:42:44.295Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts [none]
-[debug] [2024-06-10T00:42:44.295Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts {"accountId":"github-action-798042192","serviceAccount":{"displayName":"GitHub Actions (aarondewanz/searlesbaseballwebsite)","description":"A service account with permission to deploy to Firebase Hosting and Cloud Functions for the GitHub repository aarondewanz/searlesbaseballwebsite"}}
-[debug] [2024-06-10T00:42:45.572Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts 200
-[debug] [2024-06-10T00:42:45.572Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts [omitted]
-[debug] [2024-06-10T00:42:45.573Z] >>> [apiv2][query] GET https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com [none]
-[debug] [2024-06-10T00:42:45.575Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:getIamPolicy [none]
-[debug] [2024-06-10T00:42:45.755Z] <<< [apiv2][status] GET https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com 200
-[debug] [2024-06-10T00:42:45.756Z] <<< [apiv2][body] GET https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com {"name":"projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com","projectId":"searles-website","uniqueId":"113046273521459916840","email":"github-action-798042192@searles-website.iam.gserviceaccount.com","displayName":"GitHub Actions (aarondewanz/searlesbaseballwebsite)","etag":"MDEwMjE5MjA=","description":"A service account with permission to deploy to Firebase Hosting and Cloud Functions for the GitHub repository aarondewanz/searlesbaseballwebsite","oauth2ClientId":"113046273521459916840"}
-[debug] [2024-06-10T00:42:45.904Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:getIamPolicy 200
-[debug] [2024-06-10T00:42:45.904Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:getIamPolicy {"version":1,"etag":"BwYafletqhA=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-674543703314@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:searles-website@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-674543703314@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebasedatabase.admin","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-674543703314@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-674543703314@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:searlesbaseball22@gmail.com"]}]}
-[debug] [2024-06-10T00:42:45.905Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:setIamPolicy [none]
-[debug] [2024-06-10T00:42:45.905Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:setIamPolicy {"policy":{"version":1,"etag":"BwYafletqhA=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-674543703314@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:searles-website@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-674543703314@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com","serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebasedatabase.admin","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-674543703314@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-674543703314@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:searlesbaseball22@gmail.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
-[debug] [2024-06-10T00:42:47.001Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:setIamPolicy 200
-[debug] [2024-06-10T00:42:47.002Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/searles-website:setIamPolicy {"version":1,"etag":"BwYafm2RNRM=","bindings":[{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-674543703314@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:searles-website@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-674543703314@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com","serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebasedatabase.admin","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-674543703314@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-674543703314@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-sfmjf@searles-website.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:searlesbaseball22@gmail.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-798042192@searles-website.iam.gserviceaccount.com"]}]}
-[debug] [2024-06-10T00:42:47.003Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com/keys [none]
-[debug] [2024-06-10T00:42:47.003Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com/keys {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
-[debug] [2024-06-10T00:42:47.411Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com/keys 200
-[debug] [2024-06-10T00:42:47.411Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com/keys {"name":"projects/searles-website/serviceAccounts/github-action-798042192@searles-website.iam.gserviceaccount.com/keys/77804596f5fa94408cff784d26115e534eac332c","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE","privateKeyData":"ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAic2Vhcmxlcy13ZWJzaXRlIiwKICAicHJpdmF0ZV9rZXlfaWQiOiAiNzc4MDQ1OTZmNWZhOTQ0MDhjZmY3ODRkMjYxMTVlNTM0ZWFjMzMyYyIsCiAgInByaXZhdGVfa2V5IjogIi0tLS0tQkVHSU4gUFJJVkFURSBLRVktLS0tLVxuTUlJRXZRSUJBREFOQmdrcWhraUc5dzBCQVFFRkFBU0NCS2N3Z2dTakFnRUFBb0lCQVFERCsvNUNHNTkrL1l2RFxuNnBsMHpXNmFOS1pzb1JaVE5UR1JnbnpIdENtdGxHYWtQNDZxclhud1E0dGJUbEZwOVBYcWphR2hFajZvQ1VHZ1xuTmVFNUdQWGdHeXRuRGpadHg2a3MwTGFNT2FSeG1zZ3NyaUZ0T3dZUm9neUtqcGt2ajk0d2t3T2lHZU41UmdBQlxuWVJJSWpwRUpBT0RjTFZZT1FXemt4dVVrbE1mUm5LMUZMRzBIUFNFanBrd1VaaU94cllOQlJZMVNOSk01M29JclxucVBNMmk1UFRaZlA3dlFOY1Vua3JyOVNWWXc0S3o0NnlxdlVpeEZZa3I2SXhPRk1uV1Z2UTJqNWhPMm8yMnYxUlxubmEwT25jbHUvY2VnM0ZpRGliallnQVpKTTU0ZWpMK0FFd2dMeDlPZlpZaGplajd4OTJlMTg2YXNnT3JpbGxBM1xudU8xUFNpQXZBZ01CQUFFQ2dnRUFOb3FGLzJMTmw5czZ6cnFXbTBWaWp1S3hJQkVTYy9TZFIxZnZudW9hSVRiblxuKzdTK1lPeG5QNENrb3pQZi8yTlBIc2ZzbjdWQ242UDMwZnk4b1pXN00zT01PQ0ZoNzFvOXovMkRsL0dndklidFxuUjFYc2NvZ1hEOGd2d2syZC92a0VSak5ic3Z5T2JCMFpla2pINm42MmlURm40bzV4WVFVL0owbmMwam5maEFzZlxudHZYcWJhR3pkQnR0MWJSQkQ3aHBDZlA2ZlZOdkJTYVR3UlRhR3hVME91SHpyQWFUcEx0eWNzdGx0dDNFcFM1QlxuNFhwcGZiY1d0NFE0ZVI0eStmQlQ5U3QyM1I4dy9oUUZ1Qy8zemJNTkJJK3BXeFJsYXdjMUlqeVhrYlpRcDczMlxuc3pwVWNnWHkyWWVSQWhRVGlDTFJ2d0IxYUdxWHBLQjBwOFl3WWJtZExRS0JnUUR5RkpXdDM0VDFhbGY4cy9EWlxuclNnMVpqb1huejduZ3dEWncyNGxJemp2dW11MVFCMEJSalpFRGV4WmxyM0ZBdWRMbmlrMFRua1RoU2JBdTBsUVxudEJRYzJTV1R5Z2RhVU9QazhWTVlOaVM5MzM4SWNIVS85WU1UT1pITW1UT0VlOHVmK2pnR2I0MW1odjdGbis4NFxuN0tBV3VFOU5HaHVsVlVPV2R5Y1d5NUJQN1FLQmdRRFBRT0JHOE91TW5KaXVrWmM5TS9NWGkxakQ0amlEZFFxaFxubklOaVBqTDk3YVVrZmhLWE0vd3NtMTU3aUFvbVNPNTQ0bjNhQWkxbUt5SU5KTXR5aXJGVllHSFJKYURhL0NLZlxuMjZjNlR6cC9JaVNyb0UyWlg1czVydExOSHJMbkZWdlBjMUF0ckE0NlVjdjV3WHhPRXF1ck4rQWYzdUVLM1Fwa1xuazd1cnVDRlZDd0tCZ1FDODR0TG5tRUJtUFZQcUdYMFVXOGZENHIveExwQW1sRkZWbU9lWWtxTWFhcHNnRWFhUVxuRi9pL29SMkp5ZFRJcER0VkJWT2hQSm04WVdpYmVZYjdNWWQvK3U4WEljd2E3SUxsWUdjMXZRbHVIYlZCSUg1Y1xuS1hUY3kwNjRGZEhjemJ0VVdDamUzS3U0RkIwMmxsUlNWaytUYXJ4MXJLbGxsK0hreFpQNmRWdGxBUUtCZ0RtVFxuM1hyMzdZaVg3TGI2elpoOE9UbStSYi9OdGtPWEhZZitjbVcxdi9iWnNicHNwLytIdXJRdHlkYnAyVi8vZlBqcVxuZTJvNGxxSStzMndSWDlBSGhmS2hIeXU2bDNDZkFZT0Z3M1NvbENqRHRJcFZzNWs3ZldWT0UxUlhCZjY2NlZHOVxueUhXWHlqQWJqMTVvaVg4cklyUWpoc2x6NHZOZ3EwVjc0WFI0YUJJM0FvR0FWSDI5TG9Yd1kwVXgwQTcwQTMxMFxub3JaQkgyRk5DSnYrN1l0ZEp4bFR6dzgzMmcwcWYrejZITjJYK2VOYXU1ZE4xOEhvWHZ2ci9SMHk4VDlqL0ZMM1xuOUNaWWt5cEd3NlhsWXJxb3gwNllicEZlYkpvVS9paGQxdkVUYXJ1VUFqUC8xUWRlNVU5Nml2bHhpc25ERStQbFxuRi9ENmQ5aG1OeVplTXE1bVJzbkd0TW89XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLAogICJjbGllbnRfZW1haWwiOiAiZ2l0aHViLWFjdGlvbi03OTgwNDIxOTJAc2Vhcmxlcy13ZWJzaXRlLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwKICAiY2xpZW50X2lkIjogIjExMzA0NjI3MzUyMTQ1OTkxNjg0MCIsCiAgImF1dGhfdXJpIjogImh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9vL29hdXRoMi9hdXRoIiwKICAidG9rZW5fdXJpIjogImh0dHBzOi8vb2F1dGgyLmdvb2dsZWFwaXMuY29tL3Rva2VuIiwKICAiYXV0aF9wcm92aWRlcl94NTA5X2NlcnRfdXJsIjogImh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92MS9jZXJ0cyIsCiAgImNsaWVudF94NTA5X2NlcnRfdXJsIjogImh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL3JvYm90L3YxL21ldGFkYXRhL3g1MDkvZ2l0aHViLWFjdGlvbi03OTgwNDIxOTIlNDBzZWFybGVzLXdlYnNpdGUuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K","validAfterTime":"2024-06-10T00:42:46Z","validBeforeTime":"9999-12-31T23:59:59Z","keyAlgorithm":"KEY_ALG_RSA_2048","keyOrigin":"GOOGLE_PROVIDED","keyType":"USER_MANAGED"}
-[info] 
-[info] +  Created service account github-action-798042192 with Firebase Hosting admin permissions. 
-[debug] [2024-06-10T00:42:47.418Z] >>> [apiv2][query] PUT https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SEARLES_WEBSITE [none]
-[debug] [2024-06-10T00:42:47.418Z] >>> [apiv2][body] PUT https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SEARLES_WEBSITE {"encrypted_value":"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","key_id":"3380204578043523366"}
-[debug] [2024-06-10T00:42:47.658Z] <<< [apiv2][status] PUT https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SEARLES_WEBSITE 201
-[debug] [2024-06-10T00:42:47.658Z] <<< [apiv2][body] PUT https://api.github.com/repos/aarondewanz/searlesbaseballwebsite/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SEARLES_WEBSITE {}
-[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_SEARLES_WEBSITE. 
-[info] i  You can manage your secrets at https://github.com/aarondewanz/searlesbaseballwebsite/settings/secrets. 
-[info] 
-[info] 
-[info] +  Created workflow file C:\Users\aaron\Baseball Website\searlesbaseballwebsite\.github/workflows/firebase-hosting-pull-request.yml 
+[info] i  deploying database, firestore, functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  database: checking rules syntax... 
+[debug] [2024-06-10T01:09:59.275Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/searles-website/locations/-/instances/searles-website-default-rtdb [none]
+[debug] [2024-06-10T01:09:59.768Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/searles-website/locations/-/instances/searles-website-default-rtdb 200
+[debug] [2024-06-10T01:09:59.768Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/searles-website/locations/-/instances/searles-website-default-rtdb {"name":"projects/674543703314/locations/us-central1/instances/searles-website-default-rtdb","project":"projects/674543703314","databaseUrl":"https://searles-website-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-06-10T01:09:59.770Z] >>> [apiv2][query] PUT https://searles-website-default-rtdb.firebaseio.com/.settings/rules.json dryRun=true
+[debug] [2024-06-10T01:09:59.770Z] >>> [apiv2][body] PUT https://searles-website-default-rtdb.firebaseio.com/.settings/rules.json "{\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2024-06-10T01:10:00.017Z] <<< [apiv2][status] PUT https://searles-website-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-06-10T01:10:00.017Z] <<< [apiv2][body] PUT https://searles-website-default-rtdb.firebaseio.com/.settings/rules.json {"status":"ok"}
+[info] +  database: rules syntax for database searles-website-default-rtdb is valid 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-10T01:10:00.021Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/searles-website:test [none]
+[debug] [2024-06-10T01:10:00.021Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/searles-website:test [omitted]
+[debug] [2024-06-10T01:10:00.544Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/searles-website:test 200
+[debug] [2024-06-10T01:10:00.544Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/searles-website:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-10T01:10:00.546Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/searles-website [none]
+[debug] [2024-06-10T01:10:00.823Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/searles-website 200
+[debug] [2024-06-10T01:10:00.824Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/searles-website {"projectId":"searles-website","projectNumber":"674543703314","displayName":"Searles Website","name":"projects/searles-website","resources":{"hostingSite":"searles-website","realtimeDatabaseInstance":"searles-website-default-rtdb","storageBucket":"searles-website.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bee50a55-de21-44d6-a45e-c1827b3110b4"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-06-10T01:10:00.827Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-10T01:10:00.827Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:10:00.828Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-10T01:10:00.829Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:10:00.830Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-10T01:10:00.830Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:10:00.832Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-10T01:10:00.832Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:10:01.369Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-10T01:10:01.369Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com [omitted]
+[warn] !  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2024-06-10T01:10:01.370Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2024-06-10T01:10:01.370Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:10:01.377Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-10T01:10:01.378Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com [omitted]
+[warn] !  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2024-06-10T01:10:01.378Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2024-06-10T01:10:01.378Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com:enable x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:10:01.418Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-10T01:10:01.418Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-10T01:10:01.421Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-10T01:10:01.421Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-06-10T01:10:01.739Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com:enable 200
+[debug] [2024-06-10T01:10:01.739Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com:enable [omitted]
+[debug] [2024-06-10T01:10:02.138Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com:enable 200
+[debug] [2024-06-10T01:10:02.138Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com:enable [omitted]
+[debug] [2024-06-10T01:10:11.748Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com [none]
+[debug] [2024-06-10T01:10:11.748Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:10:12.141Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com [none]
+[debug] [2024-06-10T01:10:12.141Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com x-goog-quota-user=projects/searles-website
+[debug] [2024-06-10T01:10:12.286Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com 200
+[debug] [2024-06-10T01:10:12.286Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-06-10T01:10:12.436Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com 200
+[debug] [2024-06-10T01:10:12.436Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/searles-website/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-06-10T01:10:12.439Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/searles-website/adminSdkConfig [none]
+[debug] [2024-06-10T01:10:12.773Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/searles-website/adminSdkConfig 200
+[debug] [2024-06-10T01:10:12.773Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/searles-website/adminSdkConfig {"projectId":"searles-website","databaseURL":"https://searles-website-default-rtdb.firebaseio.com","storageBucket":"searles-website.appspot.com","locationId":"us-central"}
+[debug] [2024-06-10T01:10:12.773Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/searles-website/configs [none]
+[debug] [2024-06-10T01:10:13.095Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/searles-website/configs 200
+[debug] [2024-06-10T01:10:13.095Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/searles-website/configs {}
+[debug] [2024-06-10T01:10:13.098Z] Validating nodejs source
+[debug] [2024-06-10T01:10:16.683Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-06-10T01:10:16.683Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-06-10T01:10:16.685Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-06-10T01:10:16.697Z] Found firebase-functions binary at 'C:\Users\aaron\Baseball Website\searlesbaseballwebsite\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-06-10T01:10:16.814Z] Error: spawn UNKNOWN
+    at ChildProcess.spawn (node:internal/child_process:413:11)
+    at Object.spawn (node:child_process:757:9)
+    at spawn (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:12:24)
+    at Delegate.serveAdmin (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:115:38)
+    at Delegate.discoverBuild (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:163:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async loadCodebases (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\prepare.js:306:32)
+    at async prepare (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\prepare.js:57:24)
+    at async chain (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:40:9)
+    at async deploy (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.

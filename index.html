@@ -19,7 +19,7 @@
         <a href="#">Contact</a>
         <a href="#">About</a>
       </div>
-      <span style="font-size:30px;cursor:pointer;color:rgba(0, 0, 139, 0.8);" onclick="openNav()">&#9776;</span>
+      <span style="font-size:30px;cursor:pointer;color:#00008B;" onclick="openNav()">&#9776;</span>
   <meta charset="utf-8">
   <title>Searles Baseball</title>
   <style>
@@ -80,18 +80,30 @@
     .team-list {
       display: none;
     }
+    .facebook-icon {
+      color: white;
+      font-size: 200px;
+    }
   </style>
 </head>
 <body>
   <div class="background">
     <div class="content">
       <h1>Welcome to Searles Baseball</h1>
-      <p>Explore the latest news, events, and updates from our team.</p>
+      <p>Explore the latest news, events, and updates.</p>
       <a href="subpages/upcoming_events.html" class="link-decorations">Upcoming Events</a>
     </div>
   </div>    
   <div class="content">
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%233F51B5&title&showTitle=0&src=c2Vhcmxlc2Jhc2ViYWxsMjJAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>      <script>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%233F51B5&title&showTitle=0&src=c2Vhcmxlc2Jhc2ViYWxsMjJAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>   
+  </div>
+  <div class="content">
+    <h2>Connect With Us</h2>  
+    <p> Follow us on Facebook for the latest updates and news.</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="https://m.facebook.com/SearlesBaseballAssociation" class="fa fa-facebook facebook-icon"></a>
+  </div>
+      <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
             maketeamslistclosedonnavopen();
